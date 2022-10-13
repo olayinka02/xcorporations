@@ -1,22 +1,25 @@
 import React, { useState } from "react";
-import { Container, Image, Row, Col } from 'react-bootstrap';
 import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
+import { Container, Image, Row, Col } from 'react-bootstrap';
 import { Gear, ChatLeftText, CardText, ColumnsGap, Files, Collection, CardList, DoorOpen, Receipt, ChatRight, ChatSquare } from 'react-bootstrap-icons';
 
+import '../Styles/menubar.css';
 import logo from '../Assets/logo.svg';
 import Hamburger from '../Assets/Hamburger.svg';
+import CardDasboard from "./CardDasboard";
 
 const Info = [
   {
     id: 1,
     title: "Dashboard",
-    icon: <ColumnsGap size={18} />
+    icon: <ColumnsGap size={18} />,
 
   },
   {
     id: 2,
     title: "Feeds",
-    icon: <ChatLeftText size={18} />
+    icon: <ChatLeftText size={18} />,
+
 
   },
 
@@ -103,7 +106,7 @@ function Dashboard() {
 
     <div style={{ display: 'flex', height: '100%', minHeight: '100vh' }} >
 
-      <Sidebar height="100vh" width="200px" customBreakPoint="800px" backgroundColor="#404690" style={{ boxShadow: '0px 1px 2.4px rgba(0, 0, 0, 0.6)' }} >
+      <Sidebar height="100vh" width="212px" customBreakPoint="1026px" backgroundColor="#404690" className="sidebar" >
         <Menu
           renderMenuItemStyles={({ level, active }) => ({
             // '.menu-icon': {
@@ -116,7 +119,7 @@ function Dashboard() {
             },
           })}>
 
-          <div style={{ marginTop: 0.5 + 'rem', marginBottom: 1.1 + 'rem', }}>
+          <div className="logoContainer" >
             <Image src={logo} fluid alt="..." />
           </div>
 
@@ -124,8 +127,8 @@ function Dashboard() {
           {
             data.map((item, index) => (
               <MenuItem
+                className="menuItem"
                 icon={item.icon}
-                style={{ height: 2.4 + 'rem', fontSize: 0.8 + 'rem', paddingLeft: 4 + 'px', }}
               >{item.title}
               </MenuItem>
             ))}
@@ -136,31 +139,29 @@ function Dashboard() {
       </Sidebar>
 
 
-      <main style={{ padding: 10, backgroundColor: '#EFF4FF' }}>
+      <main style={{ padding: 10, backgroundColor: '#EFF4FF', width:100+'%', }}>
         <Container fluid>
           {broken && (
-             <Container fluid>
+            <Container fluid>
               <Row>
-              <Col xs={6}>
-                <div onClick={() => toggleSidebar()} >
-                  <Image src={Hamburger} fluid alt="..." />
-                </div>
-              </Col>
-              <Col xs={6} >
-                <div>
-                  <Image src={Hamburger} fluid alt="..." />
-                </div>
-              </Col>
-            </Row>
+                <Col xs={6}>
+                  <div onClick={() => toggleSidebar()} >
+                    <Image src={Hamburger} fluid alt="..." />
+                  </div>
+                </Col>
+                <Col xs={6} >
+                  <div>
+                    <Image src={Hamburger} fluid alt="..." />
+                  </div>
+                </Col>
+              </Row>
 
-             </Container>
-            
+            </Container>
+
 
           )}
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nam aliquam duis cum fringilla. Purus in ac imperdiet
-            accumsan eget at. Quis sollicitudin nunc amet et egestas.</p>
+         <CardDasboard />
         </Container>
       </main>
     </div>

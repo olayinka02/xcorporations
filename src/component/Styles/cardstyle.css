@@ -1,0 +1,25 @@
+.EachCard{
+    height:'auto';
+    padding-top:1.4rem;
+    padding-bottom:1.4rem;
+    margin-bottom:1.5rem;
+    background-color:#D0DEF4;
+}
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) { 
+
+}
+
+
+@media (min-width: 1200px) { 
+
+}
