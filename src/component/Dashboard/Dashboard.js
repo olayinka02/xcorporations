@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
 import { Container, Image, Row, Col } from 'react-bootstrap';
-import { Gear, ChatLeftText, CardText, ColumnsGap, Files, Collection, CardList, DoorOpen, Receipt, ChatRight, ChatSquare } from 'react-bootstrap-icons';
+import { Gear, ChatLeftText, CardText, ColumnsGap, Files, Collection, CardList, DoorOpen, Receipt, ChatRight, ChatSquare, Bell } from 'react-bootstrap-icons';
 
 import '../Styles/menubar.css';
+import '../Styles/dashboard.css';
 import logo from '../Assets/logo.svg';
 import Hamburger from '../Assets/Hamburger.svg';
 import CardDasboard from "./CardDasboard";
@@ -139,28 +140,27 @@ function Dashboard() {
       </Sidebar>
 
 
-      <main style={{ padding: 10, backgroundColor: '#EFF4FF', width:100+'%', }}>
+      <main className="Mainbody">
         <Container fluid>
           {broken && (
-            <Container fluid>
-              <Row>
+              <Row style={{marginBottom:1+'rem',}}>
                 <Col xs={6}>
                   <div onClick={() => toggleSidebar()} >
                     <Image src={Hamburger} fluid alt="..." />
                   </div>
                 </Col>
                 <Col xs={6} >
-                  <div>
-                    <Image src={Hamburger} fluid alt="..." />
+                  <div style={{float:'right',display:'flex',}} >
+                    <div style={{width:'auto',height:'auto',padding:0.6+'rem',backgroundColor:'white',borderRadius:50+'px',position:'relative',}}>
+                      <Bell  size={26} />
+                      <span style={{position:'absolute',top:0+'px',right:0+'px',display:'block',backgroundColor:'red',borderRadius:45+'px',height:20+'px',width:20+'px',}} className="badge badge-light">2</span>
+                    </div>
+                    
                   </div>
                 </Col>
               </Row>
-
-            </Container>
-
-
           )}
-
+         
          <CardDasboard />
         </Container>
       </main>

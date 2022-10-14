@@ -5,7 +5,7 @@ import '../Styles/cardstyle.css';
 
 function CardDasboard() {
   return (
-    <Container  fluid style={{width:100+'%'}}>
+   
       <Row>
         <Col xs={12} sm={6} md={3} >
           <Container className="EachCard" >
@@ -51,7 +51,7 @@ function CardDasboard() {
        
        
       </Row>
-    </Container>
+ 
   );
 }
 
