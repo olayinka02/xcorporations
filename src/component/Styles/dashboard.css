@@ -1,10 +1,38 @@
 .Mainbody{
-    padding-top:1rem; 
+    padding-top:0.5rem; 
     background-color:#EFF4FF; 
     width:100% !important;
 }
 .UpperRightProfileText{
     display: none;
+}
+
+.GeneralSearch{
+    display: none !important;
+    width:16rem !important;
+    height:auto !important;
+}
+.SearchIcon{
+    display: block !important;
+    width:auto; 
+    height:auto; 
+    padding: 0.6rem; 
+    background-color:white; 
+    border-radius: 50px; 
+    position:relative;
+
+}
+.TopNavDesktop{
+    display: none !important;
+}
+.TopNavMobile{
+    margin-bottom: 1rem; 
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.Hamburger{
+    display: block !important;
 }
 
 @media (min-width: 576px) {
@@ -16,11 +44,43 @@
     .UpperRightProfileText{
         display: block;
     }
-
+    .GeneralSearch{
+        display: block !important;
+        width:16rem !important;
+        height:auto !important;  
+    }
+    .SearchIcon{
+        display: none !important;
+        width:auto; 
+        height:auto; 
+        padding: 0.6rem; 
+        background-color:white; 
+        border-radius: 50px; 
+        position:relative;
+    
+    }
+  
+   
 }
 
 
 @media (min-width: 992px) { 
+   
+
+}
+@media (min-width: 1027px) { 
+    .Hamburger{
+        display:none !important;
+    }
+    .TopNavDesktop{
+        display: block !important;
+    }
+    .TopNavMobile{
+        margin-bottom: 1rem; 
+        display: none !important;;
+        flex-direction:row;
+        align-items:center;
+    }
 
 }
 

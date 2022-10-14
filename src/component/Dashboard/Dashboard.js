@@ -7,6 +7,7 @@ import '../Styles/menubar.css';
 import '../Styles/dashboard.css';
 import logo from '../Assets/logo.svg';
 import CardDasboard from "./CardDasboard";
+import TopNav from "./TopNav";
 import UpperRightProfile from "./UpperRightProfile";
 import UpperLeftHamburger from "./UpperLeftHamburger";
 import SearchInputField from "./SearchInputField";
@@ -143,11 +144,11 @@ function Dashboard() {
 
 
       <main className="Mainbody">
-        <Container fluid>
+        <Container fluid >
           {broken && (
-            <Row style={{ marginBottom: 1 + 'rem', }}>
+            <Row className="TopNavMobile" style={{ marginBottom: 1 + 'rem', display: 'flex', flexDirection: 'row', alignItems: 'center', }}>
               <Col xs={5}>
-                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingTop: 7 + 'px',gap:7+'px',}}>
+                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingTop: 7 + 'px', gap: 15 + 'px', }}>
                   <div onClick={() => toggleSidebar()} >
                     <UpperLeftHamburger />
                   </div>
@@ -161,8 +162,11 @@ function Dashboard() {
               </Col>
             </Row>
           )}
-
-          <CardDasboard />
+          {/* top nav for desktop */}
+          <div style={{ width: 100 + '%', }}>
+            <TopNav />
+            <CardDasboard />
+          </div>
         </Container>
       </main>
     </div>
