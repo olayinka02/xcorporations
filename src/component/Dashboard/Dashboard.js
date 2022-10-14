@@ -110,7 +110,7 @@ function Dashboard() {
 
     <div style={{ display: 'flex', height: '100%', minHeight: '100vh' }} >
 
-      <Sidebar height="100vh" width="212px" customBreakPoint="1026px" backgroundColor="#404690" className="sidebar" >
+      <Sidebar height="100vh" width="212px" customBreakPoint="1050px" backgroundColor="#404690" className="sidebar" >
         <Menu
           renderMenuItemStyles={({ level, active }) => ({
             // '.menu-icon': {
@@ -146,7 +146,7 @@ function Dashboard() {
       <main className="Mainbody">
         <Container fluid >
           {broken && (
-            <Row className="TopNavMobile" style={{ marginBottom: 1 + 'rem', display: 'flex', flexDirection: 'row', alignItems: 'center', }}>
+            <Row className="TopNavMobile" style={{ marginBottom: 0 + 'rem', display: 'flex', flexDirection: 'row', alignItems: 'center', }}>
               <Col xs={5}>
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingTop: 7 + 'px', gap: 15 + 'px', }}>
                   <div onClick={() => toggleSidebar()} >
@@ -165,7 +165,7 @@ function Dashboard() {
           {/* top nav for desktop */}
           <div style={{ width: 100 + '%', }}>
             <TopNav />
-            <CardDasboard />
+            <CardDasboard/>
           </div>
         </Container>
       </main>
