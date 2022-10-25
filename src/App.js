@@ -1,12 +1,14 @@
 import React from "react";
-import Dashboard from "./component/Dashboard/Dashboard";
-import { ProSidebarProvider } from 'react-pro-sidebar';
+
+import FinalDashboard from "./component/Dashboard/FinalDashboard";
+
+
 
 function App (){
   return (
-  <ProSidebarProvider>
-   <Dashboard />
-  </ProSidebarProvider>
+  <div>
+ <FinalDashboard />
+  </div>
 
   
    
