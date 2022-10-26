@@ -110,7 +110,7 @@ function Dashboard() {
 
     <div style={{ display: 'flex', height: '100%', minHeight: '100vh' }} >
 
-      <Sidebar height="100vh" width="212px" customBreakPoint="1050px" backgroundColor="#404690" className="sidebar" >
+      <Sidebar height="100vh" width="212px" customBreakPoint="1027px" backgroundColor="#404690" className="sidebar" >
         <Menu
           renderMenuItemStyles={({ level, active }) => ({
             // '.menu-icon': {
@@ -147,15 +147,15 @@ function Dashboard() {
         <Container fluid >
           {broken && (
             <Row className="TopNavMobile" style={{ marginBottom: 0 + 'rem', display: 'flex', flexDirection: 'row', alignItems: 'center', }}>
-              <Col xs={5}>
-                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingTop: 7 + 'px', gap: 15 + 'px', }}>
+              <Col xs={5} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingTop: 5 + 'px', gap: 15 + 'px', }} >
+               
                   <div onClick={() => toggleSidebar()} >
                     <UpperLeftHamburger />
                   </div>
                   <div>
                     <SearchInputField />
                   </div>
-                </div>
+               
               </Col>
               <Col xs={7} >
                 <UpperRightProfile />
@@ -165,7 +165,7 @@ function Dashboard() {
           {/* top nav for desktop */}
           <div style={{ width: 100 + '%', }}>
             <TopNav />
-            <CardDasboard/>
+            <CardDasboard />
           </div>
         </Container>
       </main>

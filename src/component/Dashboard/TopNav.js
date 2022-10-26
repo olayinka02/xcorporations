@@ -11,16 +11,14 @@ import '../Styles/dashboard.css';
 function TopNav (){
     return (
         <div className="TopNavDesktop" >
-            <Row style={{ marginBottom: 1 + 'rem', display: 'flex', flexDirection: 'row', alignItems: 'center', }}>
-              <Col xs={5}>
-                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingTop: 7 + 'px', gap: 15 + 'px', }}>
+            <Row style={{ marginBottom: 0.2 + 'rem', display: 'flex', flexDirection: 'row', alignItems: 'center', }}>
+              <Col xs={5} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingTop: 7 + 'px', gap: 15 + 'px', }}>
                   <div className="Hamburger" >
-                    <UpperLeftHamburger />
+                    <UpperLeftHamburger  className="Hamburger" />
                   </div>
                   <div>
                     <SearchInputField />
                   </div>
-                </div>
               </Col>
               <Col xs={7} >
                 <UpperRightProfile />
