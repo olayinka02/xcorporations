@@ -1,10 +1,19 @@
+*{
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 .sidebar{
     box-shadow: 0px 1px 2.4px rgba(0, 0, 0, 0.6);
+    overflow: hidden !important;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    -ms-overflow-style: none;
 }
 
 .logoContainer{
     margin-top: 1rem; 
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.0rem;
     padding-left:1rem;
 }
 .menuItem{

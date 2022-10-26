@@ -1,5 +1,5 @@
 import { Container, Stack, Row, Col, Image } from 'react-bootstrap';
-import ProductIcon from '../Assets/ProoductIcon';
+
 
 import departments from '../Assets/departments.svg';
 import production from '../Assets/production.svg';
