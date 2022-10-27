@@ -1,0 +1,333 @@
+.loginbody{
+    background-color: #FFFFFF;
+    height:100vh;
+    width:100%;
+}
+.LoginInformation{
+    background-color:#F3F3F3;
+    text-align: center;
+    width:80%;
+    margin:0rem;
+    padding:2rem;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FFFFFF;
+    display: none !important;
+}
+.Logindiv{
+    background:url(../Assets/loginandregistrationbackground.svg), #404690;
+    text-align: center; 
+    height:auto;
+    width:100%;
+}
+.textbody{
+    width:60% !important;
+}
+
+.headinglogin{
+    color: #404690;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+.headinglogin{
+    
+    text-align: left;
+ 
+}
+.paragraphlogin{
+    text-align: left; 
+    font-size:0.9rem;
+}
+.formfillbody{
+    background-color: #FFFFFF;
+    width:100%;
+    height: auto;
+    padding:1rem;
+    vertical-align: middle;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    border-radius: 0.6375rem;
+   
+}
+.loginlogo{
+    margin-top:1.1rem;
+    display: block;
+}
+.btnNowxx{
+    color: #F3F3F3;
+    text-decoration: none;
+}
+.autolayout{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    margin-top:6rem !important;
+    
+    }
+    .autolayout li{
+        font-size:0.8rem;
+    }
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    .loginbody{
+        background-color: #FFFFFF;
+        height:100vh;
+        width:100%;
+    }
+    .LoginInformation{
+        background-color:#F3F3F3;
+        text-align: center;
+        width:80%;
+        margin:0rem;
+        padding:2rem;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #FFFFFF;
+        display: none !important;
+    }
+    .Logindiv{
+        background:url(../Assets/loginandregistrationbackground.svg), #404690;
+        text-align: center; 
+        text-align: center; 
+        height:auto;
+        width:100%;
+    }
+    .textbody{
+        width:60% !important;
+    }
+    
+    .headinglogin{
+        color: #404690;
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .headinglogin{
+        
+        text-align: left;
+     
+    }
+    .paragraphlogin{
+        text-align: left; 
+        font-size:0.9rem;
+    }
+    .formfillbody{
+        background-color: #FFFFFF;
+        width:75%;
+        height: auto;
+        padding:1rem;
+        vertical-align: middle;
+        margin-top: 3rem;
+        border-radius: 0.6375rem;
+       
+    }
+    .loginlogo{
+        margin-top:2rem;
+        display: block;
+    }
+    
+    
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+ 
+    .loginbody{
+        background-color: #FFFFFF;
+        height:100vh;
+        width:100%;
+    }
+    .LoginInformation{
+        background-color:#F3F3F3;
+        text-align: center;
+        width:80%;
+        margin:0rem;
+        padding:2rem;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #FFFFFF;
+        display: block !important;
+    }
+    .Logindiv{
+        background:url(../Assets/loginandregistrationbackground.svg), #404690;
+        text-align: center; 
+        text-align: center; 
+        height:auto;
+        width:100%;
+    }
+    .textbody{
+        width:80% !important;
+        
+    }
+    
+    .headinglogin{
+        color: #404690;
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .headinglogin{
+        
+        text-align: left;
+     
+    }
+    .paragraphlogin{
+        text-align: left; 
+        font-size:0.9rem;
+    }
+    .formfillbody{
+        background-color: #FFFFFF;
+        width:87%;
+        height: auto;
+        padding:1rem;
+        vertical-align: middle;
+        margin-top: 1.0rem;
+        border-radius: 0.6375rem;
+       
+    }
+    .loginlogo{
+        margin-top:2rem;
+        display: none;
+    }
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .loginbody{
+        background-color: #FFFFFF;
+        height:100vh;
+        width:100%;
+    }
+    .LoginInformation{
+        background-color:#F3F3F3;
+        text-align: center;
+        width:90%;
+        margin:0rem;
+        padding:1rem;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #FFFFFF;
+        display: block !important;
+    }
+    .Logindiv{
+        background:url(../Assets/loginandregistrationbackground.svg), #404690;
+        text-align: center; 
+        height:auto;
+        width:100%;
+    }
+    .textbody{
+        width:80% !important;
+    }
+    
+    .headinglogin{
+        color: #404690;
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .headinglogin{
+        
+        text-align: left;
+     
+    }
+    .paragraphlogin{
+        text-align: left; 
+        font-size:0.9rem;
+    }
+    .formfillbody{
+        background-color: #FFFFFF;
+        width:80%;
+        height: auto;
+        padding:1rem;
+        vertical-align: middle;
+        margin-top: 0.7rem;
+        border-radius: 0.6375rem;
+       
+    }
+    .loginlogo{
+        display: none;
+        margin-top:0rem;
+    }
+    .autolayout{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+        margin-top:4rem !important;
+        
+        }
+        .autolayout li{
+            font-size:0.8rem;
+        }
+    
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .loginbody{
+        background-color: #FFFFFF;
+        height:100vh;
+        width:100%;
+    }
+    .LoginInformation{
+        background-color:#F3F3F3;
+        text-align: center;
+        width:80%;
+        margin:0rem;
+        padding:2rem;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #FFFFFF;
+        display: block !important;
+    }
+    .Logindiv{
+        background:url(../Assets/loginandregistrationbackground.svg), #404690;
+        text-align: center; 
+        text-align: center; 
+        height:auto;
+        width:100%;
+    }
+    .textbody{
+        width:60% !important;
+    }
+    
+    .headinglogin{
+        color: #404690;
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .headinglogin{
+        
+        text-align: left;
+     
+    }
+    .paragraphlogin{
+        text-align: left; 
+        font-size:0.9rem;
+    }
+    .formfillbody{
+        background-color: #FFFFFF;
+        width:57%;
+        height: auto;
+        padding:1rem;
+        vertical-align: middle;
+        margin-top: 0.5rem;
+        border-radius: 0.6375rem;
+       
+    }
+    .loginlogo{
+        display: none;
+        margin-top:0rem;
+    }
+    
+
+}

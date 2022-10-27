@@ -21,9 +21,9 @@ function CardDasboard() {
               <div>Production</div>
               <div>45</div>
             </Stack>
-            <Stack gap={1}>
+            <Stack gap={0.7}>
               <div  className="ms-auto">
-                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 22 + 'px', width: 22 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
+                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 20 + 'px', width: 20 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
               </div>
               <div className="ms-auto">
                  <Image src={production} fluid alt="production" />
@@ -45,9 +45,9 @@ function CardDasboard() {
               <div>Production</div>
               <div>45</div>
             </Stack>
-            <Stack gap={1}>
+            <Stack gap={0.7}>
               <div  className="ms-auto">
-                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 22 + 'px', width: 22 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
+                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 20 + 'px', width: 20 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
               </div>
               <div className="ms-auto">
                  <Image src={sales} fluid alt="sales" />
@@ -69,9 +69,9 @@ function CardDasboard() {
               <div>Production</div>
               <div>45</div>
             </Stack>
-            <Stack gap={1}>
+            <Stack gap={0.7}>
               <div  className="ms-auto">
-                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 22 + 'px', width: 22 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
+                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 20 + 'px', width: 20 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
               </div>
               <div className="ms-auto">
                  <Image src={users} fluid alt="users" />
@@ -93,9 +93,9 @@ function CardDasboard() {
               <div>Production</div>
               <div>45</div>
             </Stack>
-            <Stack gap={1}>
+            <Stack gap={0.7}>
               <div  className="ms-auto">
-                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 22 + 'px', width: 22 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
+                <span style={{display: 'block',  backgroundColor: 'red', borderRadius: 45 + 'px', height: 20 + 'px', width: 20 + 'px', padding: 0.2 + 'rem', }} className="badge badge-light">2</span>
               </div>
               <div className="ms-auto">
                  <Image src={departments} fluid alt="departments" />
