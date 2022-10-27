@@ -17,14 +17,14 @@ const Info = [
         id: 1,
         title: "Dashboard",
         icon: <ColumnsGap size={18} />,
-        link: "/finaldashboard",
+        linkpage: "/finaldashboard",
 
     },
     {
         id: 2,
         title: "Feeds",
         icon: <ChatLeftText size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
 
     },
@@ -33,21 +33,21 @@ const Info = [
         id: 3,
         title: "Contact managements",
         icon: <CardText size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 4,
         title: "Branch",
         icon: <Files size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 5,
         title: "Departments",
         icon: <Collection size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
 
     },
@@ -55,56 +55,56 @@ const Info = [
         id: 6,
         title: "Schedule & Reports",
         icon: <CardList size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 7,
         title: "Inventory & Stores",
         icon: <DoorOpen size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 8,
         title: "Other Requests",
         icon: <Collection size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 9,
         title: "Sales & Payments",
         icon: <Receipt size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 10,
         title: "Messaging",
         icon: <ChatRight size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 11,
         title: "Constants",
         icon: <CardText size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 12,
         title: "Conferencing",
         icon: <ChatSquare size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
     {
         id: 13,
         title: "Settings",
         icon: <Gear size={18} />,
-        link: "/finalfeeds",
+        linkpage: "/finalfeeds",
 
     },
 
@@ -147,13 +147,16 @@ function Feeds() {
                     {
                         data.map((item, index) => (
 
-                            <Link to={item.link}>
+                            <Link to="./finaldashboard" >
                                 <MenuItem
                                     className="menuItem"
                                     icon={item.icon}
-                                >{item.title}
+                                >
+                                    {item.title}
+                                
                                 </MenuItem>
                             </Link>
+                          
 
                         ))}
 
