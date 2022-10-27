@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 import { Link } from "react-router-dom";
@@ -13,112 +13,12 @@ import UpperRightProfile from "./UpperRightProfile";
 import UpperLeftHamburger from "./UpperLeftHamburger";
 import SearchInputField from "./SearchInputField";
 
-const Info = [
-  {
-    id: 1,
-    title: "Dashboard",
-    icon: <ColumnsGap size={18} />,
-    linkpage: "/finaldashboard",
-
-  },
-  {
-    id: 2,
-    title: "Feeds",
-    icon: <ChatLeftText size={18} />,
-    linkpage: "/finalfeeds",
-
-
-  },
-
-  {
-    id: 3,
-    title: "Contact managements",
-    icon: <CardText size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 4,
-    title: "Branch",
-    icon: <Files size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 5,
-    title: "Departments",
-    icon: <Collection size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 6,
-    title: "Schedule & Reports",
-    icon: <CardList size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 7,
-    title: "Inventory & Stores",
-    icon: <DoorOpen size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 8,
-    title: "Other Requests",
-    icon: <Collection size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 9,
-    title: "Sales & Payments",
-    icon: <Receipt size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 10,
-    title: "Messaging",
-    icon: <ChatRight size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 11,
-    title: "Constants",
-    icon: <CardText size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 12,
-    title: "Conferencing",
-    icon: <ChatSquare size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-  {
-    id: 13,
-    title: "Settings",
-    icon: <Gear size={18} />,
-    linkpage: "/finalfeeds",
-
-  },
-
-];
-
-
-
-
 
 
 function Dashboard() {
 
   const { toggleSidebar, broken } = useProSidebar();
-  const [data] = useState(Info)
+
 
   return (
 
@@ -142,24 +42,62 @@ function Dashboard() {
               <Image src={logo} fluid alt="..." />
             </div>
           </Link>
-
-
-          {
-            data.map((item, index) => (
-              
-              <Link to="./finalfeeds" >
-              <MenuItem
-                className="menuItem"
-                icon={item.icon}
-              >
-                {item.title}
-
+               
+              <Link to="./finaldashboard" >
+              <MenuItem active className="menuItem" icon= {<ColumnsGap size={18} />} >
+                dashboard
               </MenuItem>
               </Link>
 
-            ))}
+              <Link to="./finalfeeds" >
+              <MenuItem className="menuItem" routerLink={<Link to="/finalfeeds" />} icon= {<ChatLeftText size={18} />} >
+                Feeds
+              </MenuItem>
+              </Link>
+              
+              <MenuItem className="menuItem" icon= {<CardText size={18} />} >
+                Contact Managements
+              </MenuItem>
 
+              <MenuItem className="menuItem" icon= {<Files size={18} />} >
+                Branch
+              </MenuItem>
 
+              <MenuItem className="menuItem" icon= { <Collection size={18} />} >
+                Department
+              </MenuItem>
+
+              <MenuItem className="menuItem" icon= { <CardList size={18} />} >
+                Schedule & Reports
+              </MenuItem>
+
+              <MenuItem className="menuItem" icon= {<DoorOpen size={18} />} >
+                Inventory & Stores
+              </MenuItem>
+
+              <MenuItem className="menuItem" icon= {<Collection size={18} />} >
+                Other Request
+              </MenuItem>
+
+              <MenuItem className="menuItem" icon= {<Receipt size={18} />} >
+                Sales & Payments
+              </MenuItem>
+
+              <MenuItem className="menuItem" icon= {<ChatRight size={18} />} >
+                Messaging
+              </MenuItem>
+              
+              <MenuItem className="menuItem" icon= { <CardText size={18} />} >
+                Constants
+              </MenuItem>
+
+              <MenuItem className="menuItem" icon= { <ChatSquare size={18} />} >
+                Conferencing
+              </MenuItem>
+
+              <MenuItem className="menuItem" icon= { <Gear size={18} />} >
+                Settings
+              </MenuItem>
 
         </Menu>
       </Sidebar>
