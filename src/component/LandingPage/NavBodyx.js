@@ -19,7 +19,7 @@ class NavBodyx extends Component {
         return (
             <div>
                 <Navbar id="navbar" fixed="top" expand="lg" className="NavBarBody">
-                    <Container fluid>
+                    <Container>
                         <Navbar.Brand>
 
                             <Image src={logo} fluid />
