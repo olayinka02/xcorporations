@@ -7,8 +7,8 @@ import { Gear, ChatLeftText, CardText, ColumnsGap, Files, Collection, CardList, 
 import '../Styles/menubar.css';
 import '../Styles/dashboard.css';
 import logo from '../Assets/logo.svg';
-import CardDasboard from "./CardDasboard";
-import TopNav from "./TopNav";
+// import CardDasboard from "./CardDasboard";
+// import TopNav from "./TopNav";
 import UpperRightProfile from "./UpperRightProfile";
 import UpperLeftHamburger from "./UpperLeftHamburger";
 import SearchInputField from "./SearchInputField";
@@ -43,17 +43,17 @@ function Dashboard() {
             </div>
           </Link>
                
-              <Link to="./finaldashboard" >
-              <MenuItem active className="menuItem" icon= {<ColumnsGap size={18} />} >
+           
+              <MenuItem active className="menuItem" component={<Link to="/finaldashboard" />} icon= {<ColumnsGap size={18} />} >
                 dashboard
               </MenuItem>
-              </Link>
+         
 
-              <Link to="./finalfeeds" >
-              <MenuItem className="menuItem" routerLink={<Link to="/finalfeeds" />} icon= {<ChatLeftText size={18} />} >
+        
+              <MenuItem className="menuItem" component={<Link to="/finalfeeds" />}  icon= {<ChatLeftText size={18} />} >
                 Feeds
               </MenuItem>
-              </Link>
+          
               
               <MenuItem className="menuItem" icon= {<CardText size={18} />} >
                 Contact Managements
@@ -123,10 +123,10 @@ function Dashboard() {
             </Row>
           )}
           {/* top nav for desktop */}
-          <div style={{ width: 100 + '%', }}>
+          {/* <div style={{ width: 100 + '%', }}>
             <TopNav />
             <CardDasboard />
-          </div>
+          </div> */}
         </Container>
       </main>
     </div>
